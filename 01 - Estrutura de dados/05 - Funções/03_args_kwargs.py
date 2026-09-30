@@ -1,18 +1,15 @@
-def exibir_poema(data_extenso, *args, **kwargs):  # Define a função: data_extenso é obrigatório, *args recebe vários argumentos e **kwargs recebe vários argumentos nomeados
-
+def exibir_poema(data_extenso, *args, **kwargs):  # Define a função: data_extenso é obrigatório, *args recebe vários argumentos e **kwargs recebe argumentos nomeados
     texto = "\n".join(args)  # Junta todos os textos de *args, colocando uma quebra de linha entre eles
-
     meta_dados = "\n".join([f"{chave.title()}: {valor}" for chave, valor in kwargs.items()])  # Percorre os kwargs e cria "Chave: Valor" para cada item
-
     mensagem = f"{data_extenso}\n\n{texto}\n\n{meta_dados}"  # Monta a mensagem final juntando data, texto e metadados
-
     print(mensagem)  # Exibe a mensagem completa
 
 
 exibir_poema(  # Chama a função
 
-    "Zen of Python",  # Primeiro argumento → vai para data_extenso
+    "Sexta-Feira, 26 de Agosto 2026",  # Vai para data_extenso
 
+    "Zen of Python",  # Vai para *args
     "Beautiful is better than ugly.",  # Vai para *args
     "Explicit is better than implicit.",  # Vai para *args
     "Simple is better than complex.",  # Vai para *args
@@ -36,6 +33,22 @@ exibir_poema(  # Chama a função
 
     autor="Tim Peters",  # Vai para **kwargs como chave "autor" e valor "Tim Peters"
     ano=1999,  # Vai para **kwargs como chave "ano" e valor 1999
+    
 )
 
+
 # Observação: *args recebe vários argumentos posicionais como uma tupla, enquanto **kwargs recebe vários argumentos nomeados como um dicionário.
+'''
+| Recurso    | Recebe                                  | Dentro da função vira | Exemplo                         |
+| ---------- | --------------------------------------- | --------------------- | ------------------------------- |
+| `*args`    | Argumentos **posicionais**              | `tuple`               | `funcao(10, 20, 30)`            |
+| `**kwargs` | Argumentos **nomeados** (`chave=valor`) | `dict`                | `funcao(nome="Jhow", idade=30)` |
+'''
+
+
+'''
+A frase mais simples possível:
+
+*args = vários valores.
+**kwargs = várias informações com nome.
+'''
