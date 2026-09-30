@@ -1,4 +1,4 @@
-nome = "gUIlherME"
+nome = "JhoNaTan PInheirO"
 
 print(nome.upper())
 print(nome.lower())

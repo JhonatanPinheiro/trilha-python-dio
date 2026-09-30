@@ -1,7 +1,7 @@
-nome = "Guilherme"
+nome = "Jhonatan"
 idade = 28
 
-nome, idade = "Giovanna", 27
+nome, idade = "Pinheiro", 27
 
 print(nome, idade)
 
