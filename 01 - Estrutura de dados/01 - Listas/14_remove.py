@@ -1,5 +1,4 @@
-linguagens = ["python", "js", "c", "java", "csharp"]
+linguagens = ["python", "js", "c", "java", "csharp"]  # Cria uma lista com 5 linguagens
+linguagens.remove("c")  # Remove o elemento que possui o valor "c"
 
-linguagens.remove("c")
-
-print(linguagens)  # ["python", "js", "java", "csharp"]
+print(linguagens)  # Exibe a lista sem "c": ["python", "js", "java", "csharp"]
