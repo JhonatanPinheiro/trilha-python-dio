@@ -1,8 +1,8 @@
-contatos = {"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}}
+contatos = {"Jhonatan@gmail.com": {"nome": "Jhonatan", "telefone": "3333-2221"}}  # Cria o dicionário original
+copia = contatos.copy()  # Cria uma cópia do dicionário
+copia["Jhonatan@gmail.com"] = {"nome": "Gui"}  # Altera o valor da chave na cópia
 
-copia = contatos.copy()
-copia["guilherme@gmail.com"] = {"nome": "Gui"}
+print(contatos["Jhonatan@gmail.com"])  # Exibe o valor do dicionário original → {"nome": "Jhonatan", "telefone": "3333-2221"}
+print(copia["Jhonatan@gmail.com"])  # Exibe o valor da cópia → {"nome": "Gui"}
 
-print(contatos["guilherme@gmail.com"])  # {"nome": "Guilherme", "telefone": "3333-2221"}
-
-print(copia["guilherme@gmail.com"])  # {"nome": "Gui"}
+# Observação: copy() cria uma cópia independente do dicionário principal; alterar a chave na cópia não altera o dicionário original.

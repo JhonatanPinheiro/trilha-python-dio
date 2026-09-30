@@ -1,4 +1,7 @@
-contatos = {"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}}
+contatos = {"Jhonatan@gmail.com": {"nome": "Jhonatan", "telefone": "3333-2221"}}  # Cria um dicionário com um contato
 
-resultado = contatos.items()  # dict_items([('guilherme@gmail.com', {'nome': 'Guilherme', 'telefone': '3333-2221'})])
-print(resultado)
+resultado = contatos.items()  # Retorna as chaves e os valores do dicionário
+
+print(resultado)  # Exibe os pares no formato dict_items([...])
+
+# Observação: items() retorna cada par como (chave, valor), permitindo percorrer os dois juntos em um for.

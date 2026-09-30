@@ -1,8 +1,9 @@
-contatos = {"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}}
+contatos = {"Jhonatan@gmail.com": {"nome": "Jhonatan", "telefone": "3333-2221"}}  # Cria um dicionário com um contato
 
-contatos.update({"guilherme@gmail.com": {"nome": "Gui"}})
-print(contatos)  # {'guilherme@gmail.com': {'nome': 'Gui'}}
+contatos.update({"Jhonatan@gmail.com": {"nome": "Gui"}})  # Atualiza a chave existente e substitui todo o valor anterior
+print(contatos)  # Exibe → {'Jhonatan@gmail.com': {'nome': 'Gui'}}
 
-contatos.update({"giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3322-8181"}})
-# {'guilherme@gmail.com': {'nome': 'Gui'}, 'giovanna@gmail.com': {'nome': 'Giovanna', 'telefone': '3322-8181'}}
-print(contatos)
+contatos.update({"giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3322-8181"}})  # Adiciona uma nova chave ao dicionário
+print(contatos)  # Exibe → {'Jhonatan@gmail.com': {'nome': 'Gui'}, 'giovanna@gmail.com': {'nome': 'Giovanna', 'telefone': '3322-8181'}}
+
+# Observação: update() altera uma chave existente ou adiciona uma nova; quando a chave já existe, o valor antigo é substituído pelo novo.
