@@ -1,31 +1,41 @@
-def exibir_poema(data_extenso, *args, **kwargs):
-    texto = "\n".join(args)
-    meta_dados = "\n".join([f"{chave.title()}: {valor}" for chave, valor in kwargs.items()])
-    mensagem = f"{data_extenso}\n\n{texto}\n\n{meta_dados}"
-    print(mensagem)
+def exibir_poema(data_extenso, *args, **kwargs):  # Define a função: data_extenso é obrigatório, *args recebe vários argumentos e **kwargs recebe vários argumentos nomeados
+
+    texto = "\n".join(args)  # Junta todos os textos de *args, colocando uma quebra de linha entre eles
+
+    meta_dados = "\n".join([f"{chave.title()}: {valor}" for chave, valor in kwargs.items()])  # Percorre os kwargs e cria "Chave: Valor" para cada item
+
+    mensagem = f"{data_extenso}\n\n{texto}\n\n{meta_dados}"  # Monta a mensagem final juntando data, texto e metadados
+
+    print(mensagem)  # Exibe a mensagem completa
 
 
-exibir_poema(
-    "Zen of Python",
-    "Beautiful is better than ugly.",
-    "Explicit is better than implicit.",
-    "Simple is better than complex.",
-    "Complex is better than complicated.",
-    "Flat is better than nested.",
-    "Sparse is better than dense.",
-    "Readability counts.",
-    "Special cases aren't special enough to break the rules.",
-    "Although practicality beats purity.",
-    "Errors should never pass silently.",
-    "Unless explicitly silenced.",
-    "In the face of ambiguity, refuse the temptation to guess.",
-    "There should be one-- and preferably only one --obvious way to do it.",
-    "Although that way may not be obvious at first unless you're Dutch.",
-    "Now is better than never.",
-    "Although never is often better than *right* now.",
-    "If the implementation is hard to explain, it's a bad idea.",
-    "If the implementation is easy to explain, it may be a good idea.",
-    "Namespaces are one honking great idea -- let's do more of those!",
-    autor="Tim Peters",
-    ano=1999,
+exibir_poema(  # Chama a função
+
+    "Zen of Python",  # Primeiro argumento → vai para data_extenso
+
+    "Beautiful is better than ugly.",  # Vai para *args
+    "Explicit is better than implicit.",  # Vai para *args
+    "Simple is better than complex.",  # Vai para *args
+    "Complex is better than complicated.",  # Vai para *args
+    "Flat is better than nested.",  # Vai para *args
+    "Sparse is better than dense.",  # Vai para *args
+    "Readability counts.",  # Vai para *args
+    "Special cases aren't special enough to break the rules.",  # Vai para *args
+    "Although practicality beats purity.",  # Vai para *args
+    "Errors should never pass silently.",  # Vai para *args
+    "Unless explicitly silenced.",  # Vai para *args
+    "In the face of ambiguity, refuse the temptation to guess.",  # Vai para *args
+    "There should be one-- and preferably only one --obvious way to do it.",  # Vai para *args
+    "Although that way may not be obvious at first unless you're Dutch.",  # Vai para *args
+    "Now is better than never.",  # Vai para *args
+    "Although never is often better than *right* now.",  # Vai para *args
+    "If the implementation is hard to explain, it's a bad idea.",  # Vai para *args
+    "If the implementation is easy to explain, it may be a good idea.",  # Vai para *args
+    "If the implementation is easy to explain, it may be a good idea.",  # Vai para *args
+    "Namespaces are one honking great idea -- let's do more of those!",  # Vai para *args
+
+    autor="Tim Peters",  # Vai para **kwargs como chave "autor" e valor "Tim Peters"
+    ano=1999,  # Vai para **kwargs como chave "ano" e valor 1999
 )
+
+# Observação: *args recebe vários argumentos posicionais como uma tupla, enquanto **kwargs recebe vários argumentos nomeados como um dicionário.
