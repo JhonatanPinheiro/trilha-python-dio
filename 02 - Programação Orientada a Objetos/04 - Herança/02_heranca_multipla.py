@@ -29,7 +29,8 @@ class Ornitorrinco(Mamifero, Ave):  # Define Ornitorrinco herdando de Mamifero e
 
     def __init__(self, cor_bico, cor_pelo, nro_patas):  # Construtor próprio do Ornitorrinco
         
-        #print(Ornitorrinco.__mro__) # Mostra a ordem de resolução de métodos (MRO)
+        #print(Ornitorrinco.__mro__) # Mostra a ordem de resolução de métodos (MRO) - Pode chamar dessa 1 Forma
+        #print(Ornitorrinco.mro()) # Mostra a ordem de resolução de métodos (MRO) - Ou Pode chamar dessa 2 Forma
         super().__init__(cor_pelo=cor_pelo, cor_bico=cor_bico, nro_patas=nro_patas)  # Passa os argumentos para a cadeia de herança
 
 
