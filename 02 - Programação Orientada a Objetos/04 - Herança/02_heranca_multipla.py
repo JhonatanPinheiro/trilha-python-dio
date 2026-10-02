@@ -28,6 +28,8 @@ class Gato(Mamifero):  # Define Gato como classe filha de Mamifero
 class Ornitorrinco(Mamifero, Ave):  # Define Ornitorrinco herdando de Mamifero e Ave
 
     def __init__(self, cor_bico, cor_pelo, nro_patas):  # Construtor próprio do Ornitorrinco
+        
+        #print(Ornitorrinco.__mro__) # Mostra a ordem de resolução de métodos (MRO)
         super().__init__(cor_pelo=cor_pelo, cor_bico=cor_bico, nro_patas=nro_patas)  # Passa os argumentos para a cadeia de herança
 
 
