@@ -16,9 +16,7 @@ class Avestruz(Passaro):  # Define Avestruz herdando da classe Passaro
         print("Avestruz não pode voar")  # Mostra que o avestruz não pode voar
 
 
-# NOTE: exemplo ruim do uso de herança para "ganhar" o método voar  # O avião não deveria herdar de Passaro
-
-
+##NOTE: exemplo ruim do uso de herança para "ganhar" o método voar  # O avião não deveria herdar de Passaro
 class Aviao(Passaro):  # Define Aviao herdando da classe Passaro
     def voar(self):  # Sobrescreve o método voar da classe Passaro
         print("Avião está decolando...")  # Mostra que o avião está decolando
