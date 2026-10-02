@@ -57,3 +57,70 @@ controle = ControleArCondicionado()  # Cria um objeto ControleArCondicionado
 controle.ligar()  # Chama o método para ligar o ar-condicionado
 controle.desligar()  # Chama o método para desligar o ar-condicionado
 print(controle.marca)  # Mostra a marca do ar-condicionado
+
+
+
+
+'''
+# ============================================================
+# RESUMO — CLASSES ABSTRATAS NO PYTHON
+# ============================================================
+
+
+# ------------------------------------------------------------
+# 1. O QUE É UMA CLASSE ABSTRATA?
+# ------------------------------------------------------------
+
+# Uma classe abstrata é como um MOLDE ou CONTRATO.
+#
+# Ela serve para definir o que as classes filhas DEVEM ter.
+#
+# Exemplo:
+#
+#        Conta
+#          │
+#     ┌────┴────┐
+#     ↓         ↓
+# ContaCorrente  ContaPoupanca
+#
+# A classe Conta pode dizer:
+#
+# "Toda conta precisa saber depositar."
+#
+# Mas cada classe filha decide COMO fazer isso.
+
+
+# ------------------------------------------------------------
+# 2. O QUE É ABC?
+# ------------------------------------------------------------
+
+# ABC significa "Abstract Base Class".
+#
+# Para usar recursos de classes abstratas, importamos:
+#
+# from abc import ABC, abstractmethod
+#
+# Depois podemos fazer:
+#
+# class Conta(ABC):
+#
+# O ABC permite que a classe utilize o mecanismo
+# de classes abstratas do Python.
+#
+# IMPORTANTE:
+#
+# Herdar de ABC, sozinho, NÃO significa que a classe
+# obrigatoriamente será abstrata.
+#
+# Para a classe realmente possuir uma regra abstrata,
+# precisamos usar @abstractmethod ou outra forma de
+# membro abstrato.
+
+
+# ------------------------------------------------------------
+# 3. O QUE É @abstractmethod?
+# ------------------------------------------------------------
+
+# @abstractmethod transforma um método em uma OBRIGAÇÃO
+# para a
+'''

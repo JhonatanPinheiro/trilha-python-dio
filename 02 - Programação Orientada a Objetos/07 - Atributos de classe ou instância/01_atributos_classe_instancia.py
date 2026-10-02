@@ -14,7 +14,7 @@ def mostrar_valores(*objs):  # Define uma função que pode receber vários obje
         print(obj)  # Mostra o objeto usando o método __str__
 
 
-aluno_1 = Estudante("Guilherme", 1)  # Cria o primeiro objeto Estudante
+aluno_1 = Estudante("Jhonatan", 1)  # Cria o primeiro objeto Estudante
 aluno_2 = Estudante("Giovanna", 2)  # Cria o segundo objeto Estudante
 mostrar_valores(aluno_1, aluno_2)  # Mostra os dados dos dois estudantes
 
